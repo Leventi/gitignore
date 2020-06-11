@@ -8,8 +8,11 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# ignore these all plugins, except
+wp-content/plugins/*
+!wp-content/plugins/rss-for-yandex-turbo
+!wp-content/plugins/mihdan-yandex-turbo-feed
+!wp-content/plugins/contact-form-7
 
 # ignore specific themes
 wp-content/themes/twenty*/
@@ -21,3 +24,26 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore all files starting with . or ~
+.*
+~*
